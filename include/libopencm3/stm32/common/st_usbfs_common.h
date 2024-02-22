@@ -37,10 +37,6 @@ LGPL License Terms @ref lgpl_license
  */
 
 /**@{*/
-
-/** @cond */
-#ifdef LIBOPENCM3_ST_USBFS_H
-/** @endcond */
 #ifndef LIBOPENCM3_ST_USBFS_COMMON_H
 #define LIBOPENCM3_ST_USBFS_COMMON_H
 
@@ -294,9 +290,4 @@ LGPL License Terms @ref lgpl_license
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#error "st_usbfs_common.h should not be included explicitly, only via st_usbfs.h"
-#endif
-/** @endcond */
 

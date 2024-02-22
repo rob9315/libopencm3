@@ -21,10 +21,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-/** @cond */
-#ifdef LIBOPENCM3_FLASH_H
-/** @endcond */
 #ifndef LIBOPENCM3_FLASH_COMMON_L01_H
 #define LIBOPENCM3_FLASH_COMMON_L01_H
 /**@{*/
@@ -141,9 +137,4 @@ END_DECLS
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#error "flash_common_l01.h should not be included directly, only via flash.h"
-#endif
-/** @endcond */
 

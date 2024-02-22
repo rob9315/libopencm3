@@ -26,10 +26,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA IWDG.H
 The order of header inclusion is important. iwdg.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_IWDG_H
-/** @endcond */
 #pragma once
 
 /**@{*/
@@ -72,9 +68,4 @@ END_DECLS
 
 /**@}*/
 
-/** @cond */
-#else
-#warning "iwdg_common_v2.h should not be included explicitly, only via iwdg.h"
-#endif
-/** @endcond */
 

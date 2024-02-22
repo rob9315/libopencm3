@@ -25,10 +25,6 @@
  */
 
 /**@{*/
-
-/** @cond */
-#if defined(LIBOPENCM3_LPTIMER_H)
-/** @endcond */
 #ifndef LIBOPENCM3_LPTIMER_COMMON_H
 #define LIBOPENCM3_LPTIMER_COMMON_H
 
@@ -287,10 +283,5 @@ void lptimer_disable_irq(uint32_t timer_peripheral, uint32_t irq);
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "lptimer_common_all.h should not be included directly, only via lptimer.h"
-#endif
-/** @endcond */
 
 /**@}*/

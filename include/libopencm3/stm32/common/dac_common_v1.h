@@ -29,10 +29,6 @@ Ben Brewer <ben.brewer@codethink.co.uk>
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA DAC.H
 The order of header inclusion is important. dac.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_DAC_H
-/** @endcond */
 #ifndef LIBOPENCM3_DAC_COMMON_V1_H
 #define LIBOPENCM3_DAC_COMMON_V1_H
 
@@ -129,11 +125,6 @@ BEGIN_DECLS
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "dac_common_v1.h should not be included explicitly, only via dac.h"
-#endif
-/** @endcond */
 
 /**@}*/
 

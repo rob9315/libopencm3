@@ -25,10 +25,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA SPI.H
 The order of header inclusion is important. spi.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_SPI_H
-/** @endcond */
 #pragma once
 
 /**@{*/
@@ -58,10 +54,5 @@ void spi_set_frf_motorola(uint32_t spi);
 
 END_DECLS
 
-/** @cond */
-#else
-#warning "spi_common_v1_frf.h should not be included explicitly, only via spi.h"
-#endif
-/** @endcond */
 /**@}*/
 

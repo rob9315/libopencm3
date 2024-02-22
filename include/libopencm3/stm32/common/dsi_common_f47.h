@@ -38,10 +38,6 @@
 
 #include <libopencm3/cm3/common.h>
 #include <libopencm3/stm32/memorymap.h>
-
-/** @cond */
-#ifndef DSI_H
-/** @endcond */
 #define DSI_H
 
 /**@{*/
@@ -818,7 +814,4 @@
 #define DSI_WRPCR_NDIV_MASK		0x7f
 #define DSI_WRPCR_PLLEN			(1 << 0)
 
-/** @cond */
-#endif
-/** @endcond */
 /**@}*/

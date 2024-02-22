@@ -26,10 +26,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA SYSCFG.H
 The order of header inclusion is important. syscfg.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#if defined(LIBOPENCM3_SYSCFG_H)
-/** @endcond */
 #ifndef LIBOPENCM3_SYSCFG_COMMON_L1F234_H
 #define LIBOPENCM3_SYSCFG_COMMON_L1F234_H
 
@@ -57,9 +53,3 @@ specific memorymap.h header before including this header file.*/
 #endif
 /**@}*/
 
-/** @cond */
-#else
-#warning "syscfg_common_l1f234.h should not be included explicitly,"
-#warning "only via syscfg.h"
-#endif
-/** @endcond */

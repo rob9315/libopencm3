@@ -28,10 +28,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA CORDIC.H
 The order of header inclusion is important. cordic.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_CORDIC_H
-/** @endcond */
 #ifndef LIBOPENCM3_CORDIC_COMMON_V1_H
 #define LIBOPENCM3_CORDIC_COMMON_V1_H
 
@@ -163,7 +159,4 @@ void cordic_sin_32bit_async(int32_t x);
 END_DECLS
 
 #endif
-/** @cond */
-#endif
-/** @endcond */
 /**@}*/

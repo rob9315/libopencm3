@@ -29,10 +29,6 @@ Florian Larysch <fl@n621.de>
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA HRTIM.H
 The order of header inclusion is important. hrtim.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_HRTIM_H
-/** @endcond */
 #ifndef LIBOPENCM3_HRTIM_COMMON_ALL_H
 #define LIBOPENCM3_HRTIM_COMMON_ALL_H
 
@@ -2995,11 +2991,6 @@ BEGIN_DECLS
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "hrtim_common_all.h should not be included explicitly, only via hrtim.h"
-#endif
-/** @endcond */
 
 /**@}*/
 

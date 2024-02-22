@@ -18,10 +18,6 @@
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/** @cond */
-#if defined(LIBOPENCM3_EXTI_H)
-/** @endcond */
-
 /**@{*/
 
 /* --- EXTI registers ------------------------------------------------------ */
@@ -48,8 +44,3 @@ END_DECLS
 
 /**@}*/
 
-/** @cond */
-#else
-#warning "exti_common_v1.h should not be included directly, only via exti.h"
-#endif
-/** @endcond */

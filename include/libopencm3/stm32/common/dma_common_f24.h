@@ -29,10 +29,6 @@ Ken Sarkies <ksarkies@internode.on.net>
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA DMA.H
 The order of header inclusion is important. dma.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_DMA_H
-/** @endcond */
 #ifndef LIBOPENCM3_DMA_COMMON_F24_H
 #define LIBOPENCM3_DMA_COMMON_F24_H
 
@@ -619,9 +615,4 @@ void dma_set_number_of_data(uint32_t dma, uint8_t stream, uint16_t number);
 END_DECLS
 /**@}*/
 #endif
-/** @cond */
-#else
-#warning "dma_common_f24.h should not be included explicitly, only via dma.h"
-#endif
-/** @endcond */
 

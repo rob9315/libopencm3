@@ -21,10 +21,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-/** @cond */
-#if defined(LIBOPENCM3_EXTI_H)
-/** @endcond */
 #ifndef LIBOPENCM3_EXTI_COMMON_ALL_H
 #define LIBOPENCM3_EXTI_COMMON_ALL_H
 /**@{*/
@@ -90,8 +86,3 @@ END_DECLS
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#warning "exti_common_all.h should not be included directly, only via exti.h"
-#endif
-/** @endcond */

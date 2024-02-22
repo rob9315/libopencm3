@@ -28,10 +28,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA USART.H
 The order of header inclusion is important. usart.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#if defined(LIBOPENCM3_USART_H)
-/** @endcond */
 #ifndef LIBOPENCM3_USART_COMMON_F124_H
 #define LIBOPENCM3_USART_COMMON_F124_H
 
@@ -300,10 +296,5 @@ specific memorymap.h header before including this header file.*/
 /* TODO */ /* Note to Uwe: what needs to be done here? */
 
 #endif
-/** @cond */
-#else
-#warning "usart_common_all.h should not be included directly, only via usart.h"
-#endif
-/** @endcond */
 /**@}*/
 

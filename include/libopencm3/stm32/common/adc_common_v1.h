@@ -28,10 +28,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA ADC.H
 The order of header inclusion is important. adc.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_ADC_H
-/** @endcond */
 #ifndef LIBOPENCM3_ADC_COMMON_V1_H
 #define LIBOPENCM3_ADC_COMMON_V1_H
 
@@ -423,7 +419,4 @@ void adc_disable_external_trigger_injected(uint32_t adc);
 END_DECLS
 
 #endif
-/** @cond */
-#endif
-/** @endcond */
 /**@}*/

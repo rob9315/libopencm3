@@ -21,10 +21,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA RNG.H
 The order of header inclusion is important. rng.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_RNG_H
-/** @endcond */
 #ifndef LIBOPENCM3_RNG_V1_H
 #define LIBOPENCM3_RNG_V1_H
 
@@ -85,9 +81,4 @@ END_DECLS
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#warning "rng_common_v1.h should not be included explicitly, only via rng.h"
-#endif
-/** @endcond */
 

@@ -35,10 +35,6 @@ specific memorymap.h header before including this header file.*/
  * found on the (so far) F3 and L4,
  * or only a much "simpler" version as found on (so far) f0 and l0.
  */
-
-/** @cond */
-#ifdef LIBOPENCM3_ADC_H
-/** @endcond */
 #ifndef LIBOPENCM3_ADC_COMMON_V2_SINGLE_H
 #define LIBOPENCM3_ADC_COMMON_V2_SINGLE_H
 
@@ -75,7 +71,4 @@ BEGIN_DECLS
 END_DECLS
 
 #endif
-/** @cond */
-#endif
-/** @endcond */
 /**@}*/

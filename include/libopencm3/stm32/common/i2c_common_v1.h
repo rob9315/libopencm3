@@ -27,10 +27,6 @@ The order of header inclusion is important. i2c.h includes the device
 specific memorymap.h header before including this header file.*/
 
 /**@{*/
-
-/** @cond */
-#ifdef LIBOPENCM3_I2C_H
-/** @endcond */
 #ifndef LIBOPENCM3_I2C_COMMON_V1_H
 #define LIBOPENCM3_I2C_COMMON_V1_H
 
@@ -420,10 +416,5 @@ void i2c_set_speed(uint32_t i2c, enum i2c_speeds speed, uint32_t clock_megahz);
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "i2c_common_v1.h should not be included explicitly, only via i2c.h"
-#endif
-/** @endcond */
 /**@}*/
 

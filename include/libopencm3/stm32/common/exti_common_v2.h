@@ -23,10 +23,6 @@
  */
 
 /**@{*/
-
-/** @cond */
-#if defined(LIBOPENCM3_EXTI_H)
-/** @endcond */
 #ifndef LIBOPENCM3_EXTI_COMMON_V2_H
 #define LIBOPENCM3_EXTI_COMMON_V2_H
 
@@ -82,10 +78,5 @@ void exti_reset_falling_request(uint32_t extis);
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "exti_common_v2.h should not be included directly, only via exti.h"
-#endif
-/** @endcond */
 
 /**@}*/

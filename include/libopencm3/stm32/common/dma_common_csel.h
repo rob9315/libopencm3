@@ -22,10 +22,6 @@ The order of header inclusion is important. dma.h includes the device
 specific memorymap.h header before including this header file.*/
 
 /**@{*/
-
-/** @cond */
-#ifdef LIBOPENCM3_DMA_H
-/** @endcond */
 #pragma once
 
 
@@ -47,10 +43,5 @@ void dma_set_channel_request(uint32_t dma, uint8_t channel, uint8_t request);
 
 END_DECLS
 
-/** @cond */
-#else
-#warning "dma_common_csel.h should not be included explicitly, only via dma.h"
-#endif
-/** @endcond */
 
 /**@}*/

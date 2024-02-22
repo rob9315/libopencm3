@@ -27,10 +27,6 @@
  * September 2011, Doc ID 018520 Rev 1
  * https://github.com/libopencm3/libopencm3-archive/blob/master/st_micro/DM00023388.pdf
  */
-
-/** @cond */
-#ifdef LIBOPENCM3_FLASH_H
-/** @endcond */
 #ifndef LIBOPENCM3_FLASH_COMMON_F01_H
 #define LIBOPENCM3_FLASH_COMMON_F01_H
 /**@{*/
@@ -116,10 +112,4 @@ END_DECLS
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#warning "flash_common_f01.h should not be included directly,"
-#warning "only via flash.h"
-#endif
-/** @endcond */
 

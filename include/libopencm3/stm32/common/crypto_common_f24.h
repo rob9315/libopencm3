@@ -93,10 +93,6 @@
 The order of header inclusion is important. cryp.h includes the device
 specific memorymap.h header before including this header file.*/
 
-/** @cond */
-#ifdef LIBOPENCM3_CRYPTO_H
-/** @endcond */
-
 #ifndef LIBOPENCM3_CRYPTO_COMMON_F24_H
 #define LIBOPENCM3_CRYPTO_COMMON_F24_H
 
@@ -282,9 +278,3 @@ END_DECLS
 /**@}*/
 /**@}*/
 #endif
-/** @cond */
-#else
-#warning "crypto_common_f24.h should not be included explicitly, "
-	 "only via crypto.h"
-#endif
-/** @endcond */

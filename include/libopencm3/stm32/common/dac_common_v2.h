@@ -29,10 +29,6 @@ Ben Brewer <ben.brewer@codethink.co.uk>
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA DAC.H
 The order of header inclusion is important. dac.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_DAC_H
-/** @endcond */
 #ifndef LIBOPENCM3_DAC_COMMON_V2_H
 #define LIBOPENCM3_DAC_COMMON_V2_H
 
@@ -579,11 +575,6 @@ void dac_set_high_frequency_mode(uint32_t dac, uint32_t hfsel);
 END_DECLS
 
 #endif
-/** @cond */
-#else
-#warning "dac_common_v2.h should not be included explicitly, only via dac.h"
-#endif
-/** @endcond */
 
 /**@}*/
 

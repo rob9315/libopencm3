@@ -21,10 +21,6 @@
 /* THIS FILE SHOULD NOT BE INCLUDED DIRECTLY, BUT ONLY VIA SPI.H
 The order of header inclusion is important. spi.h includes the device
 specific memorymap.h header before including this header file.*/
-
-/** @cond */
-#ifdef LIBOPENCM3_SPI_H
-/** @endcond */
 #pragma once
 
 /**@{*/
@@ -123,10 +119,5 @@ uint8_t spi_read8(uint32_t spi);
 
 END_DECLS
 
-/** @cond */
-#else
-#warning "spi_common_v2.h should not be included explicitly, only via spi.h"
-#endif
-/** @endcond */
 /**@}*/
 

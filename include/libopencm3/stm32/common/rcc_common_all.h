@@ -27,10 +27,6 @@
  * specific enumerations before including this header file.
  */
 
-/** @cond */
-#ifdef LIBOPENCM3_RCC_H
-/** @endcond */
-
 #ifndef LIBOPENCM3_RCC_COMMON_ALL_H
 #define LIBOPENCM3_RCC_COMMON_ALL_H
 
@@ -78,9 +74,4 @@ END_DECLS
 /**@}*/
 
 #endif
-/** @cond */
-#else
-#warning "rcc_common_all.h should not be included explicitly, only via rcc.h"
-#endif
-/** @endcond */
 

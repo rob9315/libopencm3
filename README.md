@@ -1,3 +1,26 @@
+## Edits to the original
+
+Used a bad regex replacement to make it only throw a warning and still add the symbols so [that clangd works correctly](https://github.com/clangd/clangd/issues/45).
+
+```regex
+
+\/\*\* @cond \*\/
+#if.+
+\/\*\* @endcond \*\/
+((.|\n)*)
+\/\*\* @cond \*\/
+(((#else
+#warning ".+.h should not be inclu.+)|(#else
+#error ".+\.h should not be inclu.+))(
+.+)?
+)?#endif
+\/\*\* @endcond \*\/
+```
+replaced with
+```
+$1
+```
+
 README
 ======
 [![Build Status](https://travis-ci.org/libopencm3/libopencm3.svg?branch=master)](https://travis-ci.org/libopencm3/libopencm3)

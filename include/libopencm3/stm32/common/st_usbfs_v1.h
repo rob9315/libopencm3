@@ -27,10 +27,6 @@
  * -F37x (RM0313)
  * -L1xx (RM0038)
  */
-
-/** @cond */
-#ifdef LIBOPENCM3_ST_USBFS_H
-/** @endcond */
 #ifndef LIBOPENCM3_ST_USBFS_V1_H
 #define LIBOPENCM3_ST_USBFS_V1_H
 
@@ -59,9 +55,4 @@
 	(USB_PMA_BASE + (uint8_t *)(USB_GET_EP_RX_ADDR(EP) * 2))
 
 #endif
-/** @cond */
-#else
-#error "st_usbfs_v1.h should not be included directly, only via st_usbfs.h"
-#endif
-/** @endcond */
 
